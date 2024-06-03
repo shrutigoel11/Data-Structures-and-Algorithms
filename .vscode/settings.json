@@ -4,6 +4,7 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "valarray": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "random": "cpp"
     }
 }

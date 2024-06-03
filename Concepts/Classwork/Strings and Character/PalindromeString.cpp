@@ -39,9 +39,7 @@ bool IsPalindrome(char str[], int n) {
         if( Lowercase(str[s])!= Lowercase(str[e]))
         return false;
         else{
-           while (s < e && !isAlphanumeric(str[s])) // Skip special characters from start
             s++;
-        while (s < e && !isAlphanumeric(str[e])) // Skip special characters from end
             e--;
         }
     }
