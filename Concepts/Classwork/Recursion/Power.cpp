@@ -7,9 +7,7 @@ int power(int n){
     if(n==0){
         return 1;
     }
-    int small=power(n-1);
-    int big=2*small;
-    return big;
+    return 2*power(n-1);
 }
 
 int main()
