@@ -11,18 +11,31 @@ class node{
     }
 };
 
-bool floydDetectLoop(node*&head){
-    node* fast=head;
+node* getMiddle(node*&head){
+    if(head==NULL|| head->next==NULL){
+        return head;
+    }
+    if(head->next->next==NULL){
+        return head->next;
+    }
+
+    node* fast=head->next;
     node* slow=head;
-    while(fast!=NULL && slow!=NULL){
+
+    while(fast!=NULL){
         fast=fast->next;
         if(fast!=NULL){
-            fast=fast->next;
+           fast=fast->next; 
         }
         slow=slow->next;
-        if(fast==slow){
-        return true;
     }
-    }
-    return false;
+    return slow;
+}
+
+int main()
+{
+
+
+
+return 0;
 }
