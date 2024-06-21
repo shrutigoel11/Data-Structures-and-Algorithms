@@ -36,9 +36,9 @@ while(!s.empty()){
     arr.push_back(s.top());
     s.pop();
 }
-for(auto i:arr){
-    cout<<i<<" ";
-}
+for (auto it = arr.rbegin(); it != arr.rend(); ++it) {
+        cout << *it << " ";
+    }
 
 return 0;
 }
