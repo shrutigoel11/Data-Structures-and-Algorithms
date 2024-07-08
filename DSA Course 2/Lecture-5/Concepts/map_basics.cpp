@@ -1,5 +1,5 @@
 /*
-Map is a sequence of(key,value) pair, an associative array that stores a value for each key;
+Map is a sequence of(key,value) pair, an associative array that stores a value for each key; ordered and unique
 
 map is a associative container ;
 
