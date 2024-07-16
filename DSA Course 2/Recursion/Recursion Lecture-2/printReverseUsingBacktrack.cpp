@@ -5,7 +5,7 @@ using namespace std;
 void print(int i,int N){
     //Base Case
     if(i>N) return;
-    print(i+1,N);
+    print(i+1,N); 
     cout<<i<< " ";
     
 }
