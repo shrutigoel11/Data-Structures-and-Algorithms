@@ -27,7 +27,7 @@ for(int i=0;i<6;i++){
 
 selectionSort(arr,6);
 
-cout<<"Reversed Array:";
+cout<<"Sorted Array:";
 for(int i=0;i<6;i++){
     cout<<arr[i]<<" ";
 }

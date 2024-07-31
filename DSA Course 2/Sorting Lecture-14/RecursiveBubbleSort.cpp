@@ -3,6 +3,8 @@
 using namespace std;
 
 void bubbleSort(int arr[6],int n){
+        if (n == 1) return;
+
     for(int i=n-1;i>=0;i--){
         int didswap=0;
         for(int j=0;j<=i-1;j++){
@@ -13,7 +15,11 @@ void bubbleSort(int arr[6],int n){
         didswap=1;
         } 
         }
-        if(didswap==0)break;
+            // if no swapping happens.
+    if (didswap == 0) return;
+
+    //Range reduced after recursion:
+    bubbleSort(arr, n - 1);
     }
 }
 
